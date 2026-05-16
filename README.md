@@ -6,28 +6,27 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/)
 
-> A structured portfolio of **theory notes, code implementations, and real-world examples** from DSC 215 at UCSD. Each module pairs lecture concepts with reproducible Python notebooks that go beyond the slides — simulating, visualizing, and stress-testing the ideas.
+> A structured portfolio of **theory notes, code implementations, and real-world examples** from DSC 215 at UCSD. Each module pairs lecture concepts with reproducible Python notebooks — simulating, visualizing, and stress-testing the ideas from scratch.
 
 ---
 
 ## 🗂️ Course Modules
 
-| # | Topic | Concepts | Notebook |
-|---|-------|----------|----------|
-| 01 | [Distribution Shift](./week01-distribution-shift/) | Covariate, Prior Probability & Concept Shift · MCAR/MAR/MNAR · WILDS | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](./week01-distribution-shift/notebook.ipynb) |
-| 02 | *Coming soon* | | |
-| 03 | *Coming soon* | | |
+| Class | Topic | Core Concepts | Notebook |
+|-------|-------|---------------|----------|
+| 09 | [Why Most Research Findings Are False](./class09-why-findings-are-false/) | PPV · FDR · Publication Bias · p-hacking · Ioannidis (2005) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](./class09-why-findings-are-false/notebook.ipynb) |
+| 10 | [Distribution Shift](./class10-distribution-shift/) | Covariate · Prior Probability · Concept Shift · MCAR/MAR/MNAR · WILDS | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](./class10-distribution-shift/notebook.ipynb) |
+
+*More classes added weekly as the course progresses.*
 
 ---
 
-## 🧠 Learning Objectives
+## 🧠 What This Repo Demonstrates
 
-This repo demonstrates proficiency in:
-
-- **Statistical reasoning** — decomposing distributions, identifying failure modes in deployed models
-- **Experimental design** — understanding what makes a valid comparison, sampling strategies, bias sources
-- **Scientific communication** — translating math into reproducible, well-documented code
-- **Critical thinking** — recognizing when assumptions break down in the real world
+- **Statistical reasoning** — decomposing distributions, computing PPV/FDR, identifying when p-values mislead
+- **Experimental design** — understanding power, sample size, bias sources, and what makes a finding trustworthy
+- **Critical thinking** — recognizing when standard assumptions break down in real-world deployment
+- **Scientific communication** — translating math into reproducible, well-documented, visualized code
 
 ---
 
@@ -40,17 +39,6 @@ pip install -r requirements.txt
 jupyter lab
 ```
 
-### Requirements
-```
-numpy>=1.24
-pandas>=2.0
-matplotlib>=3.7
-seaborn>=0.12
-scikit-learn>=1.3
-scipy>=1.11
-jupyter>=1.0
-```
-
 ---
 
 ## 📁 Repo Structure
@@ -59,20 +47,22 @@ jupyter>=1.0
 dsc215-statistical-thinking/
 ├── README.md
 ├── requirements.txt
-├── week01-distribution-shift/
-│   ├── README.md           ← Theory summary
-│   ├── notebook.ipynb      ← Full code walkthrough
-│   └── figures/            ← Exported plots
-├── week02-.../
-└── assets/
+├── class09-why-findings-are-false/
+│   ├── README.md        ← Theory notes with full math
+│   ├── notebook.ipynb   ← PPV, bias simulation, replication crisis
+│   └── figures/
+├── class10-distribution-shift/
+│   ├── README.md
+│   ├── notebook.ipynb
+│   └── figures/
+└── ...
 ```
 
 ---
 
 ## 👤 About
 
-**MS Data Science — UCSD (2025–2026)**  
-Building rigorous statistical foundations for real-world ML systems.
+**MS Data Science — UCSD (2025–2026)**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://linkedin.com/in/YOUR_PROFILE)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-black?logo=github)](https://github.com/YOUR_USERNAME)
