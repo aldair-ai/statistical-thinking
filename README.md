@@ -14,7 +14,9 @@
 
 | Class | Topic | Core Concepts | Notebook |
 |-------|-------|---------------|----------|
-| 08 | [Multiple Testing](./class08-multiple-testing/) | FWER · Bonferroni · P-value distributions · Benford's Law | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](./class08-multiple-testing/notebook.ipynb) |
+| 01 | [Experimental Design](./class01-experimental-design/) | Confounding · Randomization · Blocking · Factorial Design · Meta-Analysis | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](./class01-experimental-design/notebook.ipynb) |
+| 02 | [Introduction to Causal Inference](./class02-causal-inference/) | Potential Outcomes · ATE · Selection Bias · Rubin Model · RCT | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](./class02-causal-inference/notebook.ipynb) |
+| 08 | [Multiple Testing](./class08-multiple-testing/) | FWER · Bonferroni · P-value Distributions · Benford's Law | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](./class08-multiple-testing/notebook.ipynb) |
 | 09 | [Why Most Research Findings Are False](./class09-why-findings-are-false/) | PPV · FDR · Publication Bias · P-hacking · Ioannidis (2005) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](./class09-why-findings-are-false/notebook.ipynb) |
 | 10 | [Distribution Shift](./class10-distribution-shift/) | Covariate · Prior Probability · Concept Shift · MCAR/MAR/MNAR · WILDS | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](./class10-distribution-shift/notebook.ipynb) |
 
@@ -24,9 +26,10 @@
 
 ## 🧠 What This Repo Demonstrates
 
-- **Statistical reasoning** — FWER, PPV/FDR, p-value distributions, decomposing joint distributions
-- **Experimental design** — power, sample size, bias sources, what makes a finding trustworthy
-- **Critical thinking** — recognizing when standard assumptions break down in real-world deployment
+- **Experimental design** — confounding, randomization, blocking, factorial designs, meta-analysis
+- **Causal reasoning** — potential outcomes framework, ATE, why observational estimates fail
+- **Statistical reliability** — FWER, PPV/FDR, p-value distributions, publication bias
+- **ML robustness** — covariate, prior probability, and concept shift; MCAR/MAR/MNAR
 - **Scientific communication** — translating math into reproducible, well-documented, visualized code
 
 ---
@@ -48,17 +51,25 @@ jupyter lab
 dsc215-statistical-thinking/
 ├── README.md
 ├── requirements.txt
+├── class01-experimental-design/
+│   ├── README.md        ← Theory: confounding, blocking, factorial, meta-analysis
+│   ├── notebook.ipynb   ← Simulations, interaction plots, forest plots
+│   └── figures/
+├── class02-causal-inference/
+│   ├── README.md        ← Potential outcomes, ATE, selection bias, RCT proof
+│   ├── notebook.ipynb   ← Vitamin C example, selection bias, sensitivity analysis
+│   └── figures/
 ├── class08-multiple-testing/
-│   ├── README.md        ← Theory notes with full math
-│   ├── notebook.ipynb   ← FWER, Bonferroni, p-value distributions, Benford
+│   ├── README.md
+│   ├── notebook.ipynb
 │   └── figures/
 ├── class09-why-findings-are-false/
-│   ├── README.md        ← PPV derivation, Ioannidis framework
-│   ├── notebook.ipynb   ← Bias simulation, replication crisis
+│   ├── README.md
+│   ├── notebook.ipynb
 │   └── figures/
 ├── class10-distribution-shift/
-│   ├── README.md        ← Covariate/prior/concept shift taxonomy
-│   ├── notebook.ipynb   ← Shift simulations, MCAR/MAR/MNAR, WILDS
+│   ├── README.md
+│   ├── notebook.ipynb
 │   └── figures/
 └── ...
 ```
