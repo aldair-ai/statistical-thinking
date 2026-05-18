@@ -16,6 +16,9 @@
 |-------|-------|---------------|----------|
 | 01 | [Experimental Design](./class01-experimental-design/) | Confounding · Randomization · Blocking · Factorial Design · Meta-Analysis | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](./class01-experimental-design/notebook.ipynb) |
 | 02 | [Introduction to Causal Inference](./class02-causal-inference/) | Potential Outcomes · ATE · Selection Bias · Rubin Model · RCT | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](./class02-causal-inference/notebook.ipynb) |
+| 03 | [Observational Studies](./class03-observational-studies/) | Confounding · Matching · Propensity Scores · Sensitivity Analysis | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](./class03-observational-studies/notebook.ipynb) |
+| 04 | [P-values and Confidence Intervals](./class04-p-value/) | P-value · Null Hypothesis · Type I & II Errors · Confidence Intervals · Power | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](./class04-p-value/notebook.ipynb) |
+| 05 | [How Science Works](./class05-how-science-works/) | Peer Review · Replication · Incentives · Science Fictions Ch. 1 · Fraud · Bias | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](./class05-how-science-works/notebook.ipynb) |
 | 06 | [Bias, Multiple Testing & P-Hacking](./class06-bias-multiple-testing/) | Publication Bias · Confirmation Bias · FWER · P-Hacking · P-HARKing · Benford's Law | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](./class06-bias-multiple-testing/notebook.ipynb) |
 | 07 | [Meta-Analysis and Publication Bias](./class07-meta-analysis/) | Inverse-Variance Weighting · Funnel Plot · Boundary Derivation · Egger's Test | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](./class07-meta-analysis/notebook.ipynb) |
 | 08 | [Multiple Testing](./class08-multiple-testing/) | FWER · Bonferroni · P-value Distributions · Benford's Law | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](./class08-multiple-testing/notebook.ipynb) |
@@ -30,6 +33,9 @@
 
 - **Experimental design** — confounding, randomization, blocking, factorial designs, meta-analysis
 - **Causal reasoning** — potential outcomes framework, ATE, why observational estimates fail
+- **Observational studies** — matching, propensity scores, sensitivity analysis
+- **Hypothesis testing** — p-values, confidence intervals, Type I & II errors, statistical power
+- **How science works** — peer review, replication, incentives, fraud, and institutional bias
 - **Bias & integrity** — publication bias, confirmation bias, p-hacking, P-HARKing, data fabrication detection
 - **Meta-analysis** — inverse-variance weighting, funnel plots, boundary derivation, Egger's test
 - **Statistical reliability** — FWER, PPV/FDR, p-value distributions, Bonferroni & BH corrections
@@ -62,6 +68,18 @@ dsc215-statistical-thinking/
 ├── class02-causal-inference/
 │   ├── README.md        ← Potential outcomes, ATE, selection bias, RCT proof
 │   ├── notebook.ipynb   ← Vitamin C example, selection bias, sensitivity analysis
+│   └── figures/
+├── class03-observational-studies/
+│   ├── README.md        ← Confounding, matching, propensity scores, sensitivity analysis
+│   ├── notebook.ipynb   ← Matching simulations, propensity score estimation
+│   └── figures/
+├── class04-p-value/
+│   ├── README.md        ← P-value, null hypothesis, Type I & II errors, confidence intervals
+│   ├── notebook.ipynb   ← P-value distributions, power curves, CI coverage
+│   └── figures/
+├── class05-how-science-works/
+│   ├── README.md        ← Peer review, replication, incentives, fraud, Science Fictions Ch. 1
+│   ├── notebook.ipynb   ← Replication crisis simulations, incentive modeling
 │   └── figures/
 ├── class06-bias-multiple-testing/
 │   ├── README.md        ← Publication bias, confirmation bias, FWER, p-hacking, Benford's Law
