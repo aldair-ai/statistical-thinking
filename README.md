@@ -24,6 +24,7 @@
 | 08 | [Multiple Testing](./class08-multiple-testing/) | FWER · Bonferroni · P-value Distributions · Benford's Law | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](./class08-multiple-testing/notebook.ipynb) |
 | 09 | [Why Most Research Findings Are False](./class09-why-findings-are-false/) | PPV · FDR · Publication Bias · P-hacking · Ioannidis (2005) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](./class09-why-findings-are-false/notebook.ipynb) |
 | 10 | [Distribution Shift](./class10-distribution-shift/) | Covariate · Prior Probability · Concept Shift · MCAR/MAR/MNAR · WILDS | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](./class10-distribution-shift/notebook.ipynb) |
+| 11 | [Frequentist vs. Bayesian Duality](./class11-frequentist-bayesian/) | Aleatory vs. Epistemic · P-value vs. PPV · Pascal–Fermat · Bayesian Updating · Prior Sensitivity | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](./class11-frequentist-bayesian/notebook.ipynb) |
 
 *More classes added weekly as the course progresses.*
 
@@ -40,6 +41,7 @@
 - **Meta-analysis** — inverse-variance weighting, funnel plots, boundary derivation, Egger's test
 - **Statistical reliability** — FWER, PPV/FDR, p-value distributions, Bonferroni & BH corrections
 - **ML robustness** — covariate, prior probability, and concept shift; MCAR/MAR/MNAR
+- **Frequentist–Bayesian duality** — aleatory vs. epistemic probability, p-value vs. PPV, Bayesian updating, prior sensitivity
 - **Scientific communication** — translating math into reproducible, well-documented, visualized code
 
 ---
@@ -100,6 +102,10 @@ dsc215-statistical-thinking/
 ├── class10-distribution-shift/
 │   ├── README.md
 │   ├── notebook.ipynb
+│   └── figures/
+├── class11-frequentist-bayesian/
+│   ├── README.md        ← Frequentist vs. Bayesian duality, Pascal–Fermat, Bayesian updating
+│   ├── notebook.ipynb   ← Sun exploded sim, interrupted game, prior sensitivity analysis
 │   └── figures/
 └── ...
 ```
